@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="安曇野市豊科の美容室UN JOUR CREA（アンジュールクレア）。あなただけの美しさを引き出すプロの技術とおもてなしで、特別な一日を演出いたします。">
+  <title>UN JOUR CREA（アンジュールクレア）| 安曇野市豊科の美容室</title>
+  <style>
+    :root {
+      --color-primary: #000000;
+      --color-secondary: #4c4c80;
+      --color-accent: #000000;
+      --color-bg: #ffffff;
+      --color-text: #333333;
+      --color-white: #ffffff;
+      --color-light: #f8f9fa;
+      --color-border: #e0e0e0;
+      --font-main: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      --max-width: 1000px;
+      --section-padding: 60px 20px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-white);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .hero .cta-btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ===== SECTIONS ===== */
+    section { padding: var(--section-padding); }
+    section:nth-child(even) { background: var(--color-light); }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--color-accent);
+      margin: 12px auto 0;
+    }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .feature-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      color: var(--color-primary);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-content p {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== INFO ===== */
+    .info-table {
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table th, .info-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+    }
+    .info-table th {
+      width: 30%;
+      background: var(--color-light);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* ===== MAP ===== */
+    .map-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    /* ===== CONTACT CTA ===== */
+    .contact-cta {
+      background: var(--color-primary);
+      color: var(--color-white);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .contact-cta h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 20px;
+    }
+    .contact-cta p { margin-bottom: 30px; opacity: 0.9; }
+    .contact-cta .cta-btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.1rem;
+    }
+    .contact-info a { color: var(--color-white); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: #999;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #ccc; text-decoration: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 50px 16px; }
+      section { padding: 40px 16px; }
+      .features-grid { grid-template-columns: 1fr; gap: 20px; }
+      .info-table th, .info-table td { padding: 10px 12px; font-size: 0.9rem; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>UN JOUR CREA（アンジュールクレア）<br>あなただけの特別な一日を</h1>
+      <p>安曇野市豊科の美容室で、プロの技術とおもてなしの心で<br>あなたの美しさを最大限に引き出します</p>
+      <a href="tel:0120-940-513" class="cta-btn">今すぐ予約する</a>
+    </div>
+  </section>
+
+  <!-- FEATURES / SERVICES -->
+  <section>
+    <h2 class="section-title">私たちの特徴</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">✂️</div>
+        <h3>プロの技術</h3>
+        <p>経験豊富なスタイリストが、お客様一人ひとりの髪質や骨格に合わせたカット・スタイリングをご提供いたします。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">💆‍♀️</div>
+        <h3>リラックス空間</h3>
+        <p>落ち着いた雰囲気の店内で、日常を忘れてゆったりとした時間をお過ごしいただけます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌟</div>
+        <h3>トータルビューティー</h3>
+        <p>カット・カラー・パーマはもちろん、ヘッドスパやトリートメントまで、美と癒しのトータルケアをご提案します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">サロンについて</h2>
+    <div class="about-content">
+      <p>UN JOUR CREA（アンジュールクレア）は、安曇野市豊科にある美容室です。</p>
+      <p>「UN JOUR」はフランス語で「ある日」という意味。お客様にとって特別な一日となるよう、心を込めてサービスをご提供いたします。</p>
+      <p>経験豊富なスタイリストが、最新のトレンドを取り入れながらも、お客様のライフスタイルに合ったヘアスタイルをご提案。</p>
+      <p>リラックスできる空間で、美しさと癒しの時間をお楽しみください。</p>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section>
+    <h2 class="section-title">店舗情報</h2>
+    <table class="info-table">
+      <tr><th>店舗名</th><td>UN JOUR CREA（アンジュールクレア）</td></tr>
+      <tr><th>住所</th><td>〒399-8205 長野県安曇野市豊科４７８−３</td></tr>
+      <tr><th>電話番号</th><td>0120-940-513</td></tr>
+      <tr><th>営業時間</th><td>火曜日～金曜日 9:30～18:00<br>土曜日・日曜日・祝日 9:00～18:00</td></tr>
+      <tr><th>定休日</th><td>月曜日</td></tr>
+      <tr><th>駐車場</th><td>あり</td></tr>
+    </table>
+  </section>
+
+  <!-- MAP -->
+  <section>
+    <h2 class="section-title">アクセス</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.8!2d137.9!3d36.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDE4JzAwLjAiTiAxMzfCsDU0JzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1234567890!5m2!1sja!2sjp&q=長野県安曇野市豊科４７８−３" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact-cta">
+    <h2>ご予約・お問い合わせ</h2>
+    <p>お電話またはホットペッパービューティーからご予約いただけます</p>
+    <a href="tel:0120-940-513" class="cta-btn">電話で予約する</a>
+    <div class="contact-info">
+      <p>📞 <a href="tel:0120-940-513">0120-940-513</a></p>
+      <p>🌐 <a href="https://beauty.hotpepper.jp/slnH000199223/" target="_blank">ホットペッパービューティー</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 UN JOUR CREA（アンジュールクレア） All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
