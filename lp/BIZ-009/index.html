@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="長野県安曇野市穂高有明の美容室エクシア。髪と体にやさしい安心施術で、お客様一人ひとりに寄り添うワンオペ美容室です。">
+  <title>美容室エクシア | 長野県安曇野市穂高有明 - 髪と体にやさしい安心施術</title>
+  <style>
+    :root {
+      --color-primary: #000000;
+      --color-secondary: #333333;
+      --color-accent: #ffffff;
+      --color-bg: #ffffff;
+      --color-text: #333333;
+      --color-white: #ffffff;
+      --color-light: #f8f9fa;
+      --color-border: #e0e0e0;
+      --font-main: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      --max-width: 1000px;
+      --section-padding: 60px 20px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-white);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .hero .cta-btn {
+      display: inline-block;
+      background: #d4af37;
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ===== SECTIONS ===== */
+    section { padding: var(--section-padding); }
+    section:nth-child(even) { background: var(--color-light); }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #d4af37;
+      margin: 12px auto 0;
+    }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .feature-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      color: var(--color-primary);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-content p {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== INFO ===== */
+    .info-table {
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table th, .info-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+    }
+    .info-table th {
+      width: 30%;
+      background: var(--color-light);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* ===== MAP ===== */
+    .map-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    /* ===== CONTACT CTA ===== */
+    .contact-cta {
+      background: var(--color-primary);
+      color: var(--color-white);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .contact-cta h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 20px;
+    }
+    .contact-cta p { margin-bottom: 30px; opacity: 0.9; }
+    .contact-cta .cta-btn {
+      display: inline-block;
+      background: #d4af37;
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.1rem;
+    }
+    .contact-info a { color: var(--color-white); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: #999;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #ccc; text-decoration: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 50px 16px; }
+      section { padding: 40px 16px; }
+      .features-grid { grid-template-columns: 1fr; gap: 20px; }
+      .info-table th, .info-table td { padding: 10px 12px; font-size: 0.9rem; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>美容室エクシア</h1>
+      <p>長野県安曇野市穂高有明で、髪と体にやさしい安心施術をご提供。お客様一人ひとりに寄り添うワンオペ美容室です。</p>
+      <a href="tel:0263-50-7238" class="cta-btn">今すぐ予約する</a>
+    </div>
+  </section>
+
+  <!-- FEATURES / SERVICES -->
+  <section>
+    <h2 class="section-title">エクシアの特徴</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">💆‍♀️</div>
+        <h3>髪と体にやさしい施術</h3>
+        <p>お客様の髪質や頭皮の状態に合わせて、やさしい薬剤と技術で安心・安全な施術をご提供いたします。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">👤</div>
+        <h3>ワンオペでの丁寧な対応</h3>
+        <p>オーナー一人で営業しているため、お客様一人ひとりとじっくり向き合い、丁寧なカウンセリングと施術を行います。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌿</div>
+        <h3>リラックス空間</h3>
+        <p>安曇野の自然に囲まれた落ち着いた空間で、日頃の疲れを癒しながら美しい髪へと導きます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">美容室エクシアについて</h2>
+    <div class="about-content">
+      <p>美容室エクシアは、長野県安曇野市穂高有明にある地域密着型の美容室です。</p>
+      <p>「髪と体にやさしい安心施術」をモットーに、お客様の髪質や頭皮の状態を丁寧に診断し、一人ひとりに最適な施術をご提案いたします。</p>
+      <p>ワンオペで営業しているからこそ実現できる、きめ細やかなサービスと心のこもったおもてなしで、お客様に満足していただけるよう努めております。</p>
+      <p>安曇野の豊かな自然に囲まれた静かな環境で、リラックスしながら美しい髪を手に入れませんか。</p>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section>
+    <h2 class="section-title">店舗情報</h2>
+    <table class="info-table">
+      <tr><th>店舗名</th><td>美容室エクシア</td></tr>
+      <tr><th>住所</th><td>〒399-8301 長野県安曇野市穂高有明４７８−１</td></tr>
+      <tr><th>電話番号</th><td>0263-50-7238</td></tr>
+      <tr><th>最寄り駅</th><td>有明駅（長野）</td></tr>
+      <tr><th>営業形態</th><td>ワンオペ美容室</td></tr>
+      <tr><th>特徴</th><td>髪と体にやさしい安心施術</td></tr>
+    </table>
+  </section>
+
+  <!-- MAP -->
+  <section>
+    <h2 class="section-title">アクセス</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.123456789!2d137.8123456!3d36.3123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z6ZW35YeA55yM5a6J5pu46YeO5biC56m66auY5pyJ5piO77yU77yX77yY4oiS77yR!5e0!3m2!1sja!2sjp!4v1234567890123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact-cta">
+    <h2>ご予約・お問い合わせ</h2>
+    <p>髪と体にやさしい施術で、あなたの美しさを引き出します。お気軽にお電話ください。</p>
+    <a href="tel:0263-50-7238" class="cta-btn">電話で予約する</a>
+    <div class="contact-info">
+      <p>📞 <a href="tel:0263-50-7238">0263-50-7238</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 美容室エクシア All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
