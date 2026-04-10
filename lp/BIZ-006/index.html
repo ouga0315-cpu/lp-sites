@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="安曇野市豊科の美容室Dasty豊科駅前店。アットホームな雰囲気で高い技術と最高の接客をご提供。豊科駅前で通いやすい立地です。">
+  <title>Dasty豊科駅前店（安曇野） | 美容室・ヘアサロン</title>
+  <style>
+    :root {
+      --color-primary: #000000;
+      --color-secondary: #0000ee;
+      --color-accent: #000000;
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --color-white: #ffffff;
+      --color-light: #f8f9fa;
+      --color-border: #e0e0e0;
+      --font-main: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      --max-width: 1000px;
+      --section-padding: 60px 20px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-white);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .hero .cta-btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ===== SECTIONS ===== */
+    section { padding: var(--section-padding); }
+    section:nth-child(even) { background: var(--color-light); }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--color-accent);
+      margin: 12px auto 0;
+    }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .feature-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      color: var(--color-primary);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-content p {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== INFO ===== */
+    .info-table {
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table th, .info-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+    }
+    .info-table th {
+      width: 30%;
+      background: var(--color-light);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    /* ===== MAP ===== */
+    .map-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    /* ===== CONTACT CTA ===== */
+    .contact-cta {
+      background: var(--color-primary);
+      color: var(--color-white);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .contact-cta h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 20px;
+    }
+    .contact-cta p { margin-bottom: 30px; opacity: 0.9; }
+    .contact-cta .cta-btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.1rem;
+    }
+    .contact-info a { color: var(--color-white); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: #999;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #ccc; text-decoration: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 50px 16px; }
+      section { padding: 40px 16px; }
+      .features-grid { grid-template-columns: 1fr; gap: 20px; }
+      .info-table th, .info-table td { padding: 10px 12px; font-size: 0.9rem; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>安曇野市豊科の美容室<br>Dasty豊科駅前店</h1>
+      <p>アットホームな雰囲気で高い技術と最高の接客をご提供。<br>あなたの「きれい」を叶える豊科駅前のヘアサロンです。</p>
+      <a href="tel:0120-307-455" class="cta-btn">今すぐ予約する</a>
+    </div>
+  </section>
+
+  <!-- FEATURES / SERVICES -->
+  <section>
+    <h2 class="section-title">Dastyの特徴</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">✂️</div>
+        <h3>高い技術力</h3>
+        <p>経験豊富なスタイリストが、お客様一人ひとりに合わせた最適なヘアスタイルをご提案いたします。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🏠</div>
+        <h3>アットホームな雰囲気</h3>
+        <p>リラックスできる温かい空間で、お客様にくつろいでいただけるよう心がけています。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🚉</div>
+        <h3>駅前の好立地</h3>
+        <p>豊科駅前の便利な立地で、お仕事帰りやお買い物ついでにも気軽にお立ち寄りいただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">サロンについて</h2>
+    <div class="about-content">
+      <p>Dasty豊科駅前店は、安曇野市豊科にある美容室です。お客様に「きれい」をご提供することを使命とし、高い技術力と心のこもった接客でお迎えいたします。</p>
+      <p>アットホームな雰囲気の中で、リラックスしながら美しいヘアスタイルを手に入れていただけるよう、スタッフ一同心を込めてサービスをご提供しています。</p>
+      <p>豊科駅前という便利な立地にございますので、お仕事帰りやお買い物のついでにも、ぜひお気軽にお立ち寄りください。</p>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section>
+    <h2 class="section-title">店舗情報</h2>
+    <table class="info-table">
+      <tr><th>店舗名</th><td>Dasty豊科駅前店（安曇野）</td></tr>
+      <tr><th>住所</th><td>〒399-8205 長野県安曇野市豊科新田４９０６−４</td></tr>
+      <tr><th>電話番号</th><td>0120-307-455</td></tr>
+      <tr><th>営業時間</th><td>火・水・木・金　9:30-19:00</td></tr>
+      <tr><th>定休日</th><td>月・土・日</td></tr>
+      <tr><th>公式サイト</th><td><a href="https://b-gc.biz/salonlist/dasty-solare" target="_blank">https://b-gc.biz/salonlist/dasty-solare</a></td></tr>
+    </table>
+  </section>
+
+  <!-- MAP -->
+  <section>
+    <h2 class="section-title">アクセス</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dOWTgHz-VGlOaw&q=長野県安曇野市豊科新田４９０６−４" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact-cta">
+    <h2>ご予約・お問い合わせ</h2>
+    <p>美しいヘアスタイルで新しい自分を発見しませんか？<br>お気軽にお電話でご予約ください。</p>
+    <a href="tel:0120-307-455" class="cta-btn">電話で予約する</a>
+    <div class="contact-info">
+      <p>📞 <a href="tel:0120-307-455">0120-307-455</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Dasty豊科駅前店（安曇野） All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
